@@ -14,7 +14,7 @@
   function InsertMail(mailnam,mailsvr,maildom)
   {
     document.write('&lt;<a href="mailto:' + mailnam + '@' + mailsvr + '.'
-      + maildom + '">' + mailnam + '@' + mailsvr + '.' + maildom + 
+      + maildom + '">' + mailnam + '@' + mailsvr + '.' + maildom +
       '<\/a>&gt;');
   }
 </script>
@@ -136,7 +136,7 @@ Yes, of course there is. It's a moderated, spam-free mailing list on Google wher
 <h3><a name="g5">Is there an IRC channel?</a></h3>
 <blockquote>
 <p>
-Nope, there is no offical one.
+Nope, there is no official one.
 </blockquote>
 </div>
 
@@ -318,7 +318,7 @@ netsniff-ng is licensed under the GNU GPL, version 2.0. Read more about this <a 
 <h3><a name="l5">Really, then why are you doing this?</a></h3>
 <blockquote>
 <p>
-For the fun of hacking on great software and contributing to the open source community. And also, to fill the gap with some useful missing tools that can replace expensive commerical ones with even better features.
+For the fun of hacking on great software and contributing to the open source community. And also, to fill the gap with some useful missing tools that can replace expensive commercial ones with even better features.
 </blockquote>
 </div>
 
@@ -326,7 +326,7 @@ For the fun of hacking on great software and contributing to the open source com
 <h3><a name="d0">Do you have release cycles?</a></h3>
 <blockquote>
 <p>
-No, actually we don't. We should. Well, we used to, but since netsniff-ng is a spare time project and sometimes there's lots of other stuff to do and sometimes not, we are more flexible and independant this way without making hard deadline promises. Nevertheless, netsniff-ng is a long-term project, so even if there's hard times for weeks of not pushing to Git, there will be others with the opposite situation. We think netsniff-ng is useful for our daily network engineering work and research and we will do our best that it stays this way! This should be your take-home message! ;-)
+No, actually we don't. We should. Well, we used to, but since netsniff-ng is a spare time project and sometimes there's lots of other stuff to do and sometimes not, we are more flexible and independent this way without making hard deadline promises. Nevertheless, netsniff-ng is a long-term project, so even if there's hard times for weeks of not pushing to Git, there will be others with the opposite situation. We think netsniff-ng is useful for our daily network engineering work and research and we will do our best that it stays this way! This should be your take-home message! ;-)
 </blockquote>
 </div>
 
@@ -406,7 +406,7 @@ Probably not, because a vanilla kernel must be enough to run the toolkit.
 <h3><a name="d11">Will you support the PF_RING from the ntop project?</a></h3>
 <blockquote>
 <p>
-Well, no. There are two reasons for this: <i>First reason</i> is, that it's not part of the mainline kernel. A interesting discussion about getting PF_RING into the kernel can be found at the netdev lists (<a href="http://lists.openwall.net/netdev/2009/10/14/37">http://lists.openwall.net/netdev/2009/10/14/37</a>) and obviously there are no further efforts (browse the netdev/LKML, also <a href="http://www.spinics.net/lists/netfilter-devel/msg20212.html">netfilter</a>) from the ntop project to merge both architectures or add features to PF_PACKET. <i>Second reason</i> is that we've evaluated the PF_RING (without the commercial Direct NIC Access [DNA]) regarding its performance and came to the conclusion, that there is no significant performance enhancement on our IBM HS21 Bladeserver test system. ntopi's DNA ships its own versions of some modified device drivers like Broadcoms tg3 and NetXtreme, Intels e1000(e), igb and ixgbe. Since these modifications are not official, neither to the kernel, nor to the vendors and cover only a small amout of what is out there, we're not doing further investigations at the moment. Also, netsniff-ng users have reported similar observations. A benchmark with PF_RING in transparent_mode 0 and 1 is even slower than netsniff-ng and in transparent_mode 2 both have the same performance. The test was done on a Dell PowerEdge 2850. Nevertheless, <a href="http://www.ntop.org/">ntop</a> is a very interesting project you definately should check out!
+Well, no. There are two reasons for this: <i>First reason</i> is, that it's not part of the mainline kernel. A interesting discussion about getting PF_RING into the kernel can be found at the netdev lists (<a href="http://lists.openwall.net/netdev/2009/10/14/37">http://lists.openwall.net/netdev/2009/10/14/37</a>) and obviously there are no further efforts (browse the netdev/LKML, also <a href="http://www.spinics.net/lists/netfilter-devel/msg20212.html">netfilter</a>) from the ntop project to merge both architectures or add features to PF_PACKET. <i>Second reason</i> is that we've evaluated the PF_RING (without the commercial Direct NIC Access [DNA]) regarding its performance and came to the conclusion, that there is no significant performance enhancement on our IBM HS21 Bladeserver test system. ntopi's DNA ships its own versions of some modified device drivers like Broadcoms tg3 and NetXtreme, Intels e1000(e), igb and ixgbe. Since these modifications are not official, neither to the kernel, nor to the vendors and cover only a small amout of what is out there, we're not doing further investigations at the moment. Also, netsniff-ng users have reported similar observations. A benchmark with PF_RING in transparent_mode 0 and 1 is even slower than netsniff-ng and in transparent_mode 2 both have the same performance. The test was done on a Dell PowerEdge 2850. Nevertheless, <a href="http://www.ntop.org/">ntop</a> is a very interesting project you definetely should check out!
 </blockquote>
 </div>
 
